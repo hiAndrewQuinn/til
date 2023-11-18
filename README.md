@@ -13,3 +13,5 @@ _In case you want to make a repo like this for yourself:_
 - Install `fish`, `git`, `kitty`, and `nvim`.
 - `cp til.fish ~/.config/fish/functions/` to get the command into your shell.
 - Run `til` at the Fish shell and watch the magic.
+
+## Set up a TIL-Site
