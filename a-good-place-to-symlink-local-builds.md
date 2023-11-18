@@ -46,4 +46,4 @@ GPT-4 was kind enough to give me a rundown of what each of these is used for, wh
 | `/usr/local/games`        | Similar to `/usr/games`, but for games installed locally. |
 | `/snap/bin`               | Contains executables for applications installed through Snap. |
 
-Looks like `~/.local/bin` is the place to be!
+Looks like `~/.local/bin/` is the place to put it!
