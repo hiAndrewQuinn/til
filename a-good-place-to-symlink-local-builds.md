@@ -1,7 +1,11 @@
 ---
 title: A good place to symlink local builds
 date: Sat Nov 18 10:31:10 AM EET 2023
-tags: anki,linux,symlinks,builds
+tags: 
+- anki 
+- linux 
+- symlinks 
+- builds
 ---
 
 I've been a big fan of both [spaced repetition](https://gwern.net/spaced-repetition) in general and the [Anki spaced repetition system](https://github.com/ankitects/anki) in particular for a long time now. So today, after a fresh new install and [blinging out](https://github.com/hiAndrewQuinn/shell-bling-ubuntu) of Ubuntu 23.10, I decided to take the next step, as I often do with programs I use a lot, and try to build and compile it myself.
