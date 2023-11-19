@@ -2,13 +2,15 @@
 title: Art of the dotflag -- `.nojekyll`, `.gitkeep` and their ilk
 date: Sun Nov 19 09:07:23 AM EET 2023
 tags: 
+- dotfiles
+- dotflags
+- github-actions
+- design-affordances
 ---
 
-This weekend I've been ~~procrastinating~~ playing the long game by getting some nice workflows set up for my [TIL content repository](https://github.com/hiAndrewQuinn/til) and its associated [website](https://github.com/hiAndrewQuinn/til-site) (cf [Context](#context), below). If all goes well, by the time I hit `:wq` on this TIL, it should invisibly trigger 2 Git commits, a Hugo build, and then appear on the site fully-bitrthed.
+This weekend I've been ~~procrastinating~~ playing the long game by getting some nice workflows set up for my [TIL content repository](https://github.com/hiAndrewQuinn/til) and its associated [website](https://github.com/hiAndrewQuinn/til-site) (cf [Context](#context), below). If all goes well, by the time I hit `:wq` on this TIL, it should invisibly trigger 2 Git commits, a Hugo build, and then appear on the site fully-birthed.
 
-One of the more interesting patterns I noticed was the [`.nojekyll` empty file](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/) which I had to build to get GH Pages to stop tussling with my Hugo Action for turf.
-
-`.nojekyll` is *technically* a dotfile, but it doesn't actually contain any content - its mere existence is enough to change behavior. And that makes their existence a really interesting [design affordance](https://en.wikipedia.org/wiki/Affordance) offered to us developers by the filesystems we use every day but rarely think about.
+One of the more interesting patterns I noticed was the [`.nojekyll` empty file](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/) which I had to build to get GH Pages to stop tussling with my Hugo Action for turf. `.nojekyll` is *technically* a dotfile, but it doesn't actually contain any content - its mere existence is enough to change behavior. And that makes their existence a really interesting [design affordance](https://en.wikipedia.org/wiki/Affordance) offered to us developers by the filesystems we use every day but rarely think about.
 
 Some other examples I've seen:
 
