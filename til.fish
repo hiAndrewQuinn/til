@@ -34,7 +34,7 @@ tags:
 
     git add $file_name
     git commit -m "new til: $title"
-    git push
+    git push && .git/hooks/post-push
 
     popd
 end
