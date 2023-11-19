@@ -4,7 +4,7 @@ date: Sun Nov 19 09:07:23 AM EET 2023
 tags: 
 ---
 
-This weekend I've been ~procrastinating~ playing the long game by getting some nice workflows set up for my [TIL content repository](https://github.com/hiAndrewQuinn/til) and its associated [website](https://github.com/hiAndrewQuinn/til-site) (cf [Context](#context), below). If all goes well, by the time I hit `:wq` on this TIL, it should invisibly trigger 2 Git commits, a Hugo build, and then appear on the site fully-bitrthed.
+This weekend I've been ~~procrastinating~~ playing the long game by getting some nice workflows set up for my [TIL content repository](https://github.com/hiAndrewQuinn/til) and its associated [website](https://github.com/hiAndrewQuinn/til-site) (cf [Context](#context), below). If all goes well, by the time I hit `:wq` on this TIL, it should invisibly trigger 2 Git commits, a Hugo build, and then appear on the site fully-bitrthed.
 
 One of the more interesting patterns I noticed was the [`.nojekyll` empty file](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/) which I had to build to get GH Pages to stop tussling with my Hugo Action for turf.
 
@@ -60,7 +60,7 @@ sequenceDiagram
 2. I get prompted for a `Title`.
 3. After I enter a `Title`, a Neovim window immediately opens up with properly-formatted frontmatter for me to type my TIL in one go.
 4. After I `:wq`, the file is immediately added, committed, and pushed to https://github.com/hiAndrewQuinn/til.
-5. A local [post-push hook](http://localhost:1313/til-site/posts/no-such-thing-as-a-post-push-hook/) runs immediately after this push, and triggers a Github Action on https://github.com/hiAndrewQuinn/til-site called [update.yml](https://github.com/hiAndrewQuinn/til-site/blob/main/.github/workflows/update.yml).
+5. A local [post-push hook](./no-such-thing-as-a-post-push-hook/) (Git commit [here](https://github.com/hiAndrewQuinn/til/commit/7296b8a8d5d19b88616def81b2f47ce11acf7fac)) runs immediately after this push, and triggers a Github Action on https://github.com/hiAndrewQuinn/til-site called [update.yml](https://github.com/hiAndrewQuinn/til-site/blob/main/.github/workflows/update.yml).
 6. update.yml pulls the latest commits for til-site's Git submodules (currently only two -- the theme, and `til` itself, which populates the content/posts folder). That itself forms a Git commit, which immediately gets added, committed, and pushed to `til-site`.
 7. A SECOND Github Workflow called [hugo.yml](https://github.com/hiAndrewQuinn/til-site/blob/main/.github/workflows/hugo.yml) is triggered by this `til-site` commit, and rebuilds and deploys the Hugo site.
 8. The Hugo site gets the new content!
