@@ -8,8 +8,11 @@ tags:
 - shell
 ---
 
+
+
 ```bash
-su -c "$(whereis adduser | awk '{print $2}') $(whoami) sudo"
+# ⚠️: Reboots your VM.
+su -c "$(whereis adduser | awk '{print $2}') $(whoami) sudo && $(whereis reboot | awk '{print $2}')"
 ```
 
 In all its glory! For **Debian 10 and up**, because Debian 10 is where the `sysv` to `systemd` conversion became totalizing.
@@ -26,3 +29,4 @@ Let's break down quickly why each part of this is needed:
      ```
 3. `awk` to rip out `/usr/sbin/adduser`, which - thankfully - at least is still executable.
 4. `$(whoami)` because your name might not be `andrew`!
+5. `whereis reboot` because I don't want to have to manually remember to logout and login again.
