@@ -20,7 +20,7 @@ function til
 
     set -l frontmatter "---
 title: $title
-date: $(date)
+date: $(date --iso-8601)
 tags: 
 ---
 
