@@ -1,6 +1,6 @@
 ---
 title: That damned Debian 10 one-liner I always need to let me `sudo`
-date: Mon 20 Nov 2023 09:15:51 AM EET
+date: 2023-11-20
 tags:
 - debian
 - linux-groups

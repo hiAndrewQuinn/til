@@ -1,6 +1,6 @@
 ---
 title: ❔❔❔ My Open Problems & Questions - All Answers Appreciated! ❔❔❔
-date: Mon 20 Nov 9999 09:56:25 AM EET
+date: 9999-12-31
 tags:
 - meta
 - questions

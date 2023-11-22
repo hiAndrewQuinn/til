@@ -1,6 +1,6 @@
 ---
 title: No such thing as a Post-Push Hook
-date: Sat Nov 18 09:17:57 PM EET 2023
+date: 2023-11-18
 tags: 
 - git
 - cicd

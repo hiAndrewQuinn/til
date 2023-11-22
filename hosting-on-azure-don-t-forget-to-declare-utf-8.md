@@ -1,6 +1,6 @@
 ---
 title: Hosting on Azure? Don't forget to declare UTF-8
-date: Wed Nov 22 10:59:36 AM EET 2023
+date: 2023-11-22
 tags: 
 ---
 

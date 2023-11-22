@@ -1,6 +1,6 @@
 ---
 title: Multi-line string literals in Fish
-date: Fri Nov 17 09:41:43 PM EET 2023
+date: 2023-11-17
 tags: 
 ---
 

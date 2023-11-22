@@ -1,6 +1,6 @@
 ---
 title: Git controlled, user-scoped, recoverable-after-install `systemd` services and timers
-date: Tue Nov 21 07:53:49 AM EET 2023
+date: 2023-11-21
 tags: 
 - systemd
 - cronjobs

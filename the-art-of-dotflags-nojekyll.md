@@ -1,6 +1,6 @@
 ---
 title: Art of the dotflag -- `.nojekyll`, `.gitkeep` and their ilk
-date: Sun Nov 19 09:07:23 AM EET 2023
+date: 2023-11-19
 tags: 
 - dotfiles
 - dotflags

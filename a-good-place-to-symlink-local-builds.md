@@ -1,6 +1,6 @@
 ---
 title: A good place to symlink local builds
-date: Sat Nov 18 10:31:10 AM EET 2023
+date: 2023-11-18
 tags: 
 - anki 
 - linux 
