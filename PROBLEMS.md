@@ -1,6 +1,6 @@
 ---
 title: ❔❔❔ My Open Problems & Questions - All Answers Appreciated! ❔❔❔
-date: 9999-12-31
+date: 3000-01-01
 tags:
 - meta
 - questions
