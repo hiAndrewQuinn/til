@@ -3,6 +3,10 @@ title: Cloud translation is more expensive than I thought
 subtitle: 'Former title: Selkouutiset Archive now supports 77 languages'
 date: 2023-11-28
 tags: 
+- gcp
+- cloud-costs
+- cost-optimization
+- machine-translation
 - hugo
 - webdev
 - i18n
