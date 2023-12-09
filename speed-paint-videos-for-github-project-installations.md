@@ -1,6 +1,6 @@
 ---
 title: 'Speed paint videos for software installations'
-date: 2023-12-09
+date: 2023-12-07
 tags: 
 - design-affordances
 - the-medium-is-the-message
