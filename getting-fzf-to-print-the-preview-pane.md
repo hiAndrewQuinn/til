@@ -7,7 +7,7 @@ tags:
 - automation
 ---
 
-`fzf` is an incredibly useful bit of software, [if someone shows you how to use it](incredibly usef). There's a lot more to it than just fuzzy-switching directories and fuzzy-searching you shell history -- it also comes with a preview pane that updates on every keystroke. Try
+`fzf` is an incredibly useful bit of software, [if someone shows you how to use it](https://andrew-quinn.me/fzf/). There's a lot more to it than just fuzzy-switching directories and fuzzy-searching you shell history -- it also comes with a preview pane that updates on every keystroke. Try
 
 ```bash
 echo '' | fzf --preview 'echo {q} {q}'
