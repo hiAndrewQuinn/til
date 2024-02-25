@@ -1,5 +1,5 @@
 ---
-title: `fd` + `xargs` + `bat` = quick document review
+title: 'fd + xargs + bat = quick document review'
 date: 2024-02-25
 tags: 
 - xargs
