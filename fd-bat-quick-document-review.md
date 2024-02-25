@@ -1,4 +1,4 @@
-![image](https://github.com/hiAndrewQuinn/til/assets/53230903/bb320640-1db7-4640-80e6-6d7eace102ca)---
+---
 title: 'fd + xargs + bat = quick document review'
 date: 2024-02-25
 tags: 
