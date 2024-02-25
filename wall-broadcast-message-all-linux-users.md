@@ -1,5 +1,5 @@
 ---
-title: `wall`: Broadcast message all Linux users
+title: 'wall: Broadcast message all Linux users'
 date: 2024-02-01
 tags: 
 - linux-groups
