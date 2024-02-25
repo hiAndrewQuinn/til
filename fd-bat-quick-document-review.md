@@ -1,4 +1,4 @@
----
+![image](https://github.com/hiAndrewQuinn/til/assets/53230903/bb320640-1db7-4640-80e6-6d7eace102ca)---
 title: 'fd + xargs + bat = quick document review'
 date: 2024-02-25
 tags: 
@@ -10,6 +10,9 @@ tags:
 - shell
 - selkouutiset-archive
 ---
+
+![output](https://github.com/hiAndrewQuinn/til/assets/53230903/0573fe37-3552-464a-adc6-4458b61df612)
+
 
 I've been on vacation this week, and part of what I've been up to is fixing up
 the [Selkouutiset Archive](https://hiandrewquinn.github.io/selkouutiset-archive/).
