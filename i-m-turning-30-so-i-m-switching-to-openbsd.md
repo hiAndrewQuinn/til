@@ -20,6 +20,7 @@ used to down forties in [the Ahhhnald](https://arboretum.harvard.edu/) after dar
 and so I'd like to settle down with a software ecosystem I can study in real
 depth *once* without feeling like 20% of what I absorb in year X will be 
 deprecated by year X+10.
+
 It's got
 nothing to do with the fact that my personal computing habits are basically
 (1) Anki, 
@@ -27,7 +28,8 @@ nothing to do with the fact that my personal computing habits are basically
 (3) [weird little terminal sins](https://andrew-quinn.me/cli/),
 and so I actually have a lot less to lose than many when it comes to recreational
 computing habits. (["Dad, when do we get to the video game?" "This *is* the video game!"](https://www.youtube.com/watch?v=6i_7KSBvzHU))
-And it certainly isn't influenced by wanting to relive
+
+And it *certainly* isn't influenced by wanting to relive
 that teenage joy-terror of hopping Linux distros and having no clue where
 you are for 3 months instead of 3 days, scavenging fun out of a computing
 ecosystem that's *just a little off* from what you're used to. Hey, neat,
