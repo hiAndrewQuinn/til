@@ -38,7 +38,7 @@ my current teminal emulator of choice
 [Kitty](https://sw.kovidgoyal.net/kitty/),
 has gone on record a number of times saying he is not a fan
 of tmux. He has 
-[a whole section in his FAQ about it](github.com/hiAndrewQuinn/shell-bling-ubuntu):
+[a whole section in his FAQ about it](https://sw.kovidgoyal.net/kitty/faq/#i-am-using-tmux-and-have-a-problem):
 
 >[T]erminal multiplexers are [a bad idea](https://github.com/kovidgoyal/kitty/issues/391#issuecomment-638320745), do not use them, if at all possible. kitty contains features that do all of what tmux does, but better, with the exception of remote persistence.
 
