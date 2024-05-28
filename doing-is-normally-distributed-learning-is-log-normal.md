@@ -49,7 +49,7 @@ still leaves you in the red for your time budget.
 
 Needless to say, it is almost never the case that in
 software development you know all or even most of the 
-technical hurdles you will face in the processs of development.
+technical hurdles you will face in the process of development.
 An 
 [efficient markets hypothesis](https://en.wikipedia.org/wiki/Efficient-market_hypothesis)
 fanboy might say "If anyone already knew how to do it, it would
