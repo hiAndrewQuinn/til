@@ -1,5 +1,6 @@
 ---
 title: Quickstarts and Slowstarts
+subtitle: How to make an apple pie vs how to create a universe which happens to have an apple pie in it
 date: 2024-06-04
 tags: 
 - communication
