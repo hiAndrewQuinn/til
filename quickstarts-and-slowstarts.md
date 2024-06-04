@@ -42,17 +42,21 @@ Slowstarts emphasize **reproducibility over speed**,
 **accessbility over convenience** (not all of us have Docker on the job,
 or even know what it is), and
 **comprehensibility over magic**.
-Because you are starting from a totally-fresh VM, you can present the
-Slowstart in a totally linear and deterministic fashion. Because
-*the reader* knows you are starting from a totally-fresh VM, if one
-of those commands breaks later on, they have absolute confidence that 
-something is deeply wrong, because these commands definitely used to
-work on this OS, on this version. The intention is that a
-reader who can't grok the Quickstart
-will first work through the Slowstart to get the necessary
-skills they need, and only then move to figuring out how to get it to
-work on their machine, which might be all manner of tricked-out.
-In the ideal Slowstart, each command is like a step in a methematical
+- Because you are starting from a totally-fresh VM, you can present the
+  Slowstart in a totally linear and deterministic fashion.
+- Because
+  *the reader* knows you are starting from a totally-fresh VM, if one
+  of those commands breaks later on, they have absolute confidence that 
+  something is deeply wrong, because these commands definitely used to
+  work on this OS, on this version.
+
+The other intention of a Slowstart is that a
+reader who can't grok the Quickstart at first
+can work through the Slowstart once to get the necessary
+skills they need, and then move to figuring out how to get it to
+work on *their* tricked-out machine.
+In an ideal Slowstart, then, each command is like a step in a 
+sketchy but solid mathematical
 proof, doing only what is necessary, when it is necessary - so that
 the reader can selectively *omit* shell commands and see where in the
 chain that later causes things to break.
@@ -61,7 +65,10 @@ I tend to target Debian Linux in my Slowstarts, as I feel that is an
 excellent "lowest common denominator" for this kind of work. But if
 in your slice of heaven there's a better LCD, for example FreeBSD or
 Fedora or Alpine, it makes a lot of sense to just target that and
-call it a day. Who knows - you might just convince someone that
+call it a day. Even when the emphasis is on learning to drive your 
+own car,
+you can still get a lot of valuable practice in your uncle's jalopy.
+And who knows - you might just convince someone that e.g.
 `pkg_add` really is nicer than `apt install`, and make some new friends
 in high places.
 
