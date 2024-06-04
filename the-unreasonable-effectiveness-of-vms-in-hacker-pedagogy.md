@@ -1,5 +1,6 @@
 ---
 title: The unreasonable effectiveness of VMs in hacker pedagogy
+subtitle: "AKA the 'tutorial-in-a-box' method"
 date: 2024-03-31
 tags: 
 - virtualbox
