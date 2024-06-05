@@ -52,7 +52,7 @@ a well-manicured VM of that 2007 install and reliably make their way around
 the system, even today, in 2024.
 
 I've recently
-[taken to learning OpenBSD](../i-m-turning-30-so-i-m-switching-to-openbsd.md)
+[taken to learning OpenBSD](../i-m-turning-30-so-i-m-switching-to-openbsd/)
 for this very reason. And for reasons of security: While having the box not
 physically connected to the Internet creates an activation energy to doing
 something nasty with them that
