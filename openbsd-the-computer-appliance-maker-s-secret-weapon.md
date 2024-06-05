@@ -18,8 +18,6 @@ tags:
 ---
 
 
-_Obligatory "all thoughts are my own, not my employer's"._
-
 Between our ESP32 prokaryotic organisms and our 24/7 Internet-enabled
 megafauna servers, there exists a vast and loosely-defined ecosystem of things 
 the 
