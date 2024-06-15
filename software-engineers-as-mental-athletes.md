@@ -1,5 +1,5 @@
 ---
-title: Software engineers are mental athletes
+title: Software engineers as mental athletes
 date: 2024-06-15
 tags: 
 - daily-life
@@ -71,7 +71,7 @@ So, why should I feel *conflicted* about spending a little bit of money to
 burn more calories every day, deepen my sleep significantly, and cut my
 sedentary time by a third or more when all of those things have *provably* and
 *reliably* improved my own ability to program? Mental athletics and physical
-athletics have a lot in common, and a little of own can vastly improve the
+athletics have a lot in common, and a little of one can vastly improve the
 other.
 
 Next on my list: Get to finally using those gymnastics rings in the cupboard.
