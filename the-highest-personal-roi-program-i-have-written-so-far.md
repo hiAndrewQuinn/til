@@ -31,9 +31,14 @@ basically a very specialized UI for
 [the OpenOffice spell checker](https://voikko.puimula.org/),
 and I have no shame in admitting that.
 
+![`finstem.py` in action.](https://github.com/user-attachments/assets/a081337e-1faf-45f4-85ec-11f22d436638)
+
+
 `cloc` puts it at under 200 lines of code altogether,
 including the tiny `fzf` wrapper I ship with it to let
 people stem words as they type them.
+
+![An example of the `fzf` wrapper.](https://github.com/user-attachments/assets/91c066e0-efdd-4089-a09a-d49f635d835b)
 
 I pretty much consider it feature complete by this point.
 I use the wrapper dozens of times in an average day while
