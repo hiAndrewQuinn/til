@@ -22,6 +22,10 @@ such an occasion:
 python -m http.server 12345    # or whatever port you prefer
 ```
 
+![image](https://github.com/user-attachments/assets/1d352ba6-f9d3-4167-955b-93a5efb283c7)
+
+![image](https://github.com/user-attachments/assets/76c30f1a-6945-4b7f-b646-d2ba6fc427ce)
+
 
 Then to close the server, just `Ctrl+C`.
 
