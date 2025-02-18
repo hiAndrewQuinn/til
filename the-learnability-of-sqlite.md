@@ -44,7 +44,7 @@ tomes. Three which stand out in this context:
 Curious. Why not Postgres?
 
 Partly it's because I aspire to 
-[never learn things I don't intend to remember forever](andrew-quinn.me/how-i-learn-things).
+[never learn things I don't intend to remember forever](https://andrew-quinn.me/how-i-learn-things).
 Those Anki cards from Owens's book are still in rotation for
 me to this day. SQLite's sheer ubiquity, famous commitment to
 backwards compatibility, public domin status, and
