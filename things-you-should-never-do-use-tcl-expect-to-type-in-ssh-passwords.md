@@ -26,7 +26,7 @@ thought they had anything worth stealing in their
 servers. For those of us doing *real* work, which
 I must emphasize *you should never do*, 
 we had 
-[Expect](https://core.tcl-lang.org/expect/index)
+[Expect](https://core.tcl-lang.org/expect/index).
 And to SSH automatically into servers
 where we didn't have fancy accoutrements like
 "keys" or "audit requirements", we did stuff like
@@ -80,4 +80,4 @@ If you see this in the wild, be afraid. Ask no questions; give fewer answers.
 
 
 
-[^1]: This is unfair. I love Wisconsin.
+[^1]: This is unfair. I love Wisconsin. I also didn't know how to read yet.
