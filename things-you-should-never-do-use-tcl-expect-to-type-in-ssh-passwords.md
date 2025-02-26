@@ -1,5 +1,5 @@
 ---
-title: Things you should never do: Use Expect to autotype SSH passwords in scripts
+title: 'Things you should never do: Use Expect to autotype SSH passwords in scripts'
 date: 2025-02-26
 tags: 
 - anti-advice
