@@ -168,4 +168,4 @@ be little to surprise you there.
 
 
 [^1]: This is Python range notation. `L[0:l]` is empty when `l == 0`. In general it's equal to `[ L[0], L[1], L[2], ..., L[l-2], L[l-1] ]`, but *never* including `L[l]` itself.
-[^1]: Idiomatic Python would write these as simply `L[:l]` and `L[r:]`, but we're trying to make a point here.
+[^2]: Idiomatic Python would write these as simply `L[:l]` and `L[r:]`, but we're trying to make a point here.
