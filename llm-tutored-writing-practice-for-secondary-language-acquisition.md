@@ -52,6 +52,50 @@ The technique is quite simple:
       sentence that does.
    2. Mark the card as "Again", and continue along.
 
+---
+
+Here are some screenshots of the loop in action. First I open the two side by side:
+
+![image](https://github.com/user-attachments/assets/29ad4af6-ccf2-4d90-8a6e-411283200259)
+
+I am asked to translate "Yes, private beach and rowboat included in the price."
+I give it my best shot: "Kyllä, yksityinen ranna ja vene sisältyvät hintaan."
+I am a little shaky on yksityinen being the right word, but confident on the rest.
+I also either don't know, or can't retrieve from passive memory, the word for "rowboat"
+specifically - I substitute "vene", the generic word for boat.
+
+![image](https://github.com/user-attachments/assets/8614add8-4c72-47b8-8212-79f2f0ddbcb6)
+
+I hit enter. To my surprise, yksityinen was right - but ranna, the word next to it,
+was wrong! It should have been ranta, with a T.
+
+![image](https://github.com/user-attachments/assets/de9a6cc3-8164-4d0e-ab93-4502cfa7f697)
+
+I try again. I still can't bring to mind what "rowboat" would mean. LLMs are great at
+this kind of semantic search, so I make up a word that vaguely fills the space -
+ponnistusvene, a fake Finnish word that connotes "pushing boat".
+
+![image](https://github.com/user-attachments/assets/3bfee769-e2bc-4409-aa59-9a81f3f26a8e)
+
+The LLM recommends two words that look like they might hold promise: soutuvene, and
+kumivene. Let's try the first one. Does that mean rowboat?
+
+![image](https://github.com/user-attachments/assets/cb051c34-c3c0-4d65-8614-5a0e9d592217)
+
+It does! Now let's finally see what is on the other side of the Anki card:
+
+![image](https://github.com/user-attachments/assets/a33778ba-4c99-4bb6-9a8e-8bf3f37d3b34)
+
+I can *read* this perfectly fine, even though I couldn't produce it. The language
+here is much more laid back and informal than the book-speak I actually wrote:
+"Joo" instead of "Kyllä" (yes), "oma" (your own) instead of "yksityinen" (a private),
+"kuuluu" (belongs to) instead of "sisältyivät" (is included in). Nevertheless, had I
+generated the sentence we ended up with on the right on my first go, I would still
+probably mark the Anki card as Good, because I would have said the same thing
+semantically - just in a more formal register. And that's fine by me, for now.
+
+---
+
 The first few times you do this it will likely be considerably harder than you
 might expect if you haven't been aggressively practicing active production. You
 need to get a lot of little things correct to produce a truly natural-sounding
