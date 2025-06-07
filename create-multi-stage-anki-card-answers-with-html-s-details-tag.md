@@ -3,6 +3,7 @@ title: Create multi-stage Anki card answers with HTML's <details> tag
 date: 2025-06-07
 tags: 
 - anki
+- html
 - design-affordances
 - language-learning
 - todays-lucky-10000
@@ -10,7 +11,8 @@ tags:
 - secondary-language-acquisition
 ---
 
-*Insert GIF of a multi-stage card example here.*
+![image](https://github.com/user-attachments/assets/1df394d2-5590-46a0-a125-633a5dfe20fa)
+
 
 *This works as of, at least, Anki 24.06.3.*
 
