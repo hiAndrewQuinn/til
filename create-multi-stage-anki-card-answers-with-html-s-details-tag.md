@@ -19,10 +19,10 @@ tags:
 According to the
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details),
 
->The <details> HTML element creates a disclosure widget in which information is 
+>The \<details\> HTML element creates a disclosure widget in which information is 
 >visible only when the widget is toggled into an open state.
 
-In standard web browsers, absent any CSS to the contrary, a <details> tag 
+In standard web browsers, absent any CSS to the contrary, a \<details\> tag 
 starts *closed* until further notice. Since Anki is basically a local web
 browser on top of a timer, this also works there.
 
