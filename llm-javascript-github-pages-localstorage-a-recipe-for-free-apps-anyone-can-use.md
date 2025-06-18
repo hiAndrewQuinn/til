@@ -35,16 +35,10 @@ This is the stack I used to build
 which I keep as a little icon on my phone's home page. 
 Here it is:
 
-    An LLM: That's right, this is vibe coding at its best.
-
-    "Vanilla" JavaScript: The code. It runs in every browser on the planet. LLMs are great at this.
-
-    GitHub Pages: The hosting. Free, lindy, and reliable.
-
-    localStorage: The "database". This is a small (~5 MB max) bit of storage
-    built into your browser. A webpage can save notes to itself that will
-    still be there the next time you open it. It's private, offline-first,
-    and requires zero setup.
+- **An LLM**: That's right, this is vibe coding at its best. They basically all do a great job at generating basic web pages these days, so it's your pick of the litter; I use Gemini Pro because I'm a cheapskate.
+- **"Vanilla" JavaScript**: The code. It runs in every browser on the planet. LLMs are great at this. (Vanilla, here, just means don't bother with React, Vue, etc. They're great in larger projects, but for what we're doing you can get by pretty easily without them.)
+- **GitHub Pages**: This is where the real magic happens. Github Pages basically lets you put web pages online, for free, even ones with runnable JavaScript on them. A lot of engineering man-hours have gone into making this service available 24/7 no matter where you are in the world, and it's just *there* for you to *use* and likely will be in perpetuity because Github is already making plenty of money doing everything else Github does.
+- **localStorage**: Your web browser has a tiny, ~5 MB block of storage you can basically use to store whatever you want even after a web page reloads on you, if your website is coded to make use of it. This means you can do things like write checklists that remember what you had on them even several hours after you have already closed the page and returned back to it. localStorage is awesome and I can't believe more people don't use it for things like this.
 
 The loop is simple. First, you ask an LLM of your choosing to create an
 `index.html` that does what you want. Make sure to specify to use localStorage
