@@ -1,7 +1,7 @@
 ---
 title: 'Save your disk, write files directly into RAM with /dev/shm'
 subtitle: 'There are garbage dumps everywhere for those with eyes to see'
-date: 2025-06-27
+date: 2025-06-26
 tags: 
 - todays-lucky-10000
 - cost-optimization
