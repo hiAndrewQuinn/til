@@ -19,7 +19,8 @@ as much as possible,
 I'm surprised I haven't come across `/dev/shm` before. 
 In a word
 it's a world-accessible RAM scratchpad, which seems baked right into POSIX, 
-so that virtually every Unix system already has it mounted as a
+so that virtually every ~Unix~ EDIT: *Linux*
+system already has it mounted as a
 `tmpfs` by default:
 
 ```bash
