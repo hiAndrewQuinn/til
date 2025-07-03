@@ -10,6 +10,8 @@ tags:
 
 Still images of this GIF are at the bottom.
 
+![output-sentence-perturbations](https://github.com/user-attachments/assets/3022e8c0-81db-4aa6-9af4-72b26ad6aebc)
+
 
 Learning to read a language is mostly a game of getting massive quantities of 
 comprehensible input. Learning to *write* that same language is a whole 'nother
@@ -149,4 +151,23 @@ Koira jahtaa oravaa puistossa.|Koira jahtaa oravaa metsässä.|The dog chases a 
 
 ## Still images of the cards
 
+![sentence-perturbations-20250704023307](https://github.com/user-attachments/assets/3fa8e2b1-6461-4ea6-be22-5945addf5eb1)
 
+![sentence-perturbations-20250704023346](https://github.com/user-attachments/assets/a2d7ce12-bff6-4da4-8734-50b0bf041bad)
+
+![sentence-perturbations-20250704023432](https://github.com/user-attachments/assets/30b6f0b4-44c8-4712-8b42-31fb7e286158)
+
+![sentence-perturbations-20250704023503](https://github.com/user-attachments/assets/23e2ec6f-869e-4d16-9a15-d0ad57769716)
+
+![sentence-perturbations-20250704023550](https://github.com/user-attachments/assets/19aaf335-fd6a-41f8-81dc-1c63af5086f5)
+
+![sentence-perturbations-20250704023556](https://github.com/user-attachments/assets/c124600f-73f8-4a73-86f7-9724ad26e20f)
+
+![sentence-perturbations-20250704023623](https://github.com/user-attachments/assets/b540b662-db32-42eb-b7a7-e8d16f0791fd)
+
+![sentence-perturbations-20250704023632](https://github.com/user-attachments/assets/dfe8eef9-b193-4c79-b2c7-c10aac246dce)
+
+I'm not a linguistics researcher, just a spirited practicioner, otherwise I would seriously be looking
+at what LLMs are doing in this regard in particular. The pedagogical effects of a machine that can immediately
+set your linguistic bones back into place every time you subluxate them are probably ones we are only beginning
+to see the true magnitude of.
