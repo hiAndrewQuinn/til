@@ -194,13 +194,8 @@ like you, hop aboard the Golang Express.
 
 
 
-
-
-
-
-
 [^1]: (Hei Qt-Ryhmä, teidän pitäisi harkita minun palkaamista. Vitsi, vitsi.)
- [^2]: If you dig into the internals of SQLite deep enough,
+[^2]: If you dig into the internals of SQLite deep enough,
 [like I did way back when](../the-learnability-of-sqlite/), you start
 to realize this kind of design pattern is absolutely everywhere in
 Dr. Hipp's work. It is much easier to implement a tiny virtual machine
@@ -210,4 +205,6 @@ then SQLite to Linux file system functions, etc. I belive Dr. Hipps's
 background before SQLite was in building these very kinds of VMs, and
 so he's very good at it. It also explains why people working on really
 weird platforms like FreeRTOS [still love it](https://sqlite.org/selfcontained.html):
-> All of these interfaces are readily available on most platforms, and **custom VFSes can be designed to run SQLite on even the most austere embedded devices.**
+"All of these interfaces are readily available on most platforms, and 
+**custom VFSes can be designed to run SQLite on even the most austere 
+embedded devices.**
