@@ -72,7 +72,7 @@ var exampleDB *sql.DB  // bundle into the .exe, dump on run, ezpz!
 Very handy if you just want to ship a single `.exe` file and not have
 to worry about people needing any other files to along with it. (An
 awful shame then that there's no
-[official](https://github.com/therecipe/qt?tab=readme-ov-file)
+[official](https://github.com/therecipe/qt)
 [Qt 6](https://www.qt.io/product/qt6)
 release for Go. The best cross-compilation programming language paired
 with the best cross-platform GUI framework? Seems like a match made in
