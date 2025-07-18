@@ -49,7 +49,7 @@ Go has a lot of neat tricks like this up its sleeve. Simon Willison
 of Django, Datasette and `llm` fame talks often about the
 [Baked Data architectural pattern](https://simonwillison.net/2021/Jul/28/baked-data/):
 
-    Baked Data: bundling a read-only copy of your data alongside the code for your application, as part of the same deployment
+>**Baked Data**: bundling a read-only copy of your data alongside the code for your application, as part of the same deployment
 
 The Go `embed` library, contained within its standard library,
 makes this trivial to do:
