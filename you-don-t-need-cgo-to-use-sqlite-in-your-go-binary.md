@@ -172,7 +172,7 @@ and truly, genuinely *need* to guarantee that SQLite database is as
 rock solid as it gets. In which case I think you're best off eating
 the CGO complexity and getting the best supported option in the bunch.
 
-Or maybe you've inherited a web app that was build with the Big Honkin'
+Or maybe you've inherited a web app that was built with the Big Honkin'
 VM approach and you just started to notice that ... hey, that's weird...
 not all of the writes are going through to SQLite. Oh no. Then this
 *might* be an angle to investigate. Again: Way out of my experience
