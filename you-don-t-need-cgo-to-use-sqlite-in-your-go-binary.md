@@ -136,7 +136,7 @@ space, because while Modern C is the best known one, it's not the only
 game in town even here. I've heard good things about
 [ncruces's go-sqlite3](https://github.com/ncruces/go-sqlite3),
 which uses WASM instead to bypass the CGo requirement. Some people have
-reported they actually get *better* performance with this plugin, so
+reported they actually get *better* performance with this plugin.
 
 If you're actually getting bottlenecked on the raw numbers, it might
 be worth swapping out to this. That hasn't been an issue for me with
