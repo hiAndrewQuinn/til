@@ -20,12 +20,32 @@ For people who aren't in the Go know, "pure" Go programs are trivially
 easy to compile cross-platform to all the major platforms by default.
 You read that right - you can just `go build` a single Windows 
 executable, Mac executable, and Linux executable *on the same machine*
-and just ship it. This was the real reason I chose Go over Python for
+and just ship it: 
+
+```bash
+# This can all happen on the same box!
+export CGO_ENABLED=0 # no c cross-compilation please
+
+export GOOS=linux
+GOARCH=amd64 go build -o hello-linux-amd64 hello.go
+GOARCH=arm64 go build -o hello-linux-arm64 hello.go
+
+export GOOS=darwin   # aka mac
+GOARCH=amd64 go build -o hello-darwin-amd64 hello.go
+GOARCH=arm64 go build -o hello-darwin-arm64 hello.go
+
+export GOOS=windows
+GOARCH=amd64 go build -o hello-windows-amd64.exe hello.go
+GOARCH=arm64 go build -o hello-windows-arm64.exe hello.go
+```
+
+
+This was the real reason I chose Go over Python for
 [`tsk`, my instant-search Finnish to English pocket dictionary](https://github.com/hiAndrewQuinn/tsk/).
 I wanted to be able to give Windows users a single `.exe` they could
 just *run* and have work out of the box. 
 
-(Go has a lot of neat tricks like this up its sleeve. Simon Willison 
+Go has a lot of neat tricks like this up its sleeve. Simon Willison 
 of Django, Datasette and `llm` fame talks often about the
 [Baked Data architectural pattern](https://simonwillison.net/2021/Jul/28/baked-data/):
 
@@ -50,7 +70,13 @@ var exampleDB *sql.DB  // bundle into the .exe, dump on run, ezpz!
 ```
 
 Very handy if you just want to ship a single `.exe` file and not have
-to worry about people needing any other files to along with it.)
+to worry about people needing any other files to along with it. (An
+awful shame then that there's no
+[official](https://github.com/therecipe/qt?tab=readme-ov-file)
+[Qt 6](https://www.qt.io/product/qt6)
+release for Go. The best cross-compilation programming language paired
+with the best cross-platform GUI framework? Seems like a match made in
+heaven to me.[^1])
 
 Back to the point. As soon as you start using dependencies
 which require [CGo](https://go.dev/wiki/cgo), that trivial
@@ -83,3 +109,8 @@ No more excuses! Please start using SQLite in your Go applications
 again, it is the gift that just keeps on giving. If you don't believe me
 believe the
 [Library of Congress](https://www.loc.gov/preservation/digital/formats/fdd/fdd000461.shtml).
+
+
+
+[^1]: (Hei Qt-Ryhmä, teidän pitäisi harkita minun palkaamista. Vitsi, vitsi.)
+ 
