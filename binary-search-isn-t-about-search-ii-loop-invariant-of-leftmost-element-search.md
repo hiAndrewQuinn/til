@@ -10,9 +10,9 @@ tags:
 ---
 
 In the first
-["Binary search isn't about search"](https://hiandrewquinn.github.io/til-site/posts/binary-search-isn-t-about-search/)
+["Binary search isn't about search"](https://til.andrew-quinn.me/posts/binary-search-isn-t-about-search/)
 post, we spoke about 
-[using `assert` statements to enforce your loop invariants](https://hiandrewquinn.github.io/til-site/posts/binary-search-isn-t-about-search/#hl-2-5).
+[using `assert` statements to enforce your loop invariants](https://til.andrew-quinn.me/posts/binary-search-isn-t-about-search/#hl-2-5).
 Our plain old everyday binary search invariant can be summarized as such:
 
 1. For all x in `L[0:l]`[^1], x is *strictly* less than `T`, the element we are searching for.

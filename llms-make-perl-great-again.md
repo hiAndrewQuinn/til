@@ -16,7 +16,7 @@ tags:
 Perl 5 went through a long nadir of unpopularity due in large part to its
 deserved "Write Once, Read Never" reputation. So I was surprised to find out
 not only is it
-[installed by default on Debian](https://hiandrewquinn.github.io/til-site/posts/what-programming-languages-come-out-of-the-box-on-debian-12/),
+[installed by default on Debian](https://til.andrew-quinn.me/posts/what-programming-languages-come-out-of-the-box-on-debian-12/),
 it's installed nearly *everywhere* by default.
 It's even the non-shell scripting language of choice on
 [OpenBSD](https://marc.info/?l=openbsd-misc&m=159041121804486&w=2)!

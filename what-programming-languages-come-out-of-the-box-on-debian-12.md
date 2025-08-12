@@ -11,7 +11,7 @@ tags:
 ---
 
 Poking around in a 
-[fresh VM in Vagrant](https://hiandrewquinn.github.io/til-site/posts/the-unreasonable-effectiveness-of-vms-in-hacker-pedagogy/),
+[fresh VM in Vagrant](https://til.andrew-quinn.me/posts/the-unreasonable-effectiveness-of-vms-in-hacker-pedagogy/),
 I see
 
 1. `bash`
@@ -26,7 +26,7 @@ There may be others I missed.
 Why I'm curious: Knowing that a language is installed by default on the most
 popular Linux distribution can simplify certain concerns considerably, which
 are of special interest to 
-[people who don't work on Internet-connected boxes](https://hiandrewquinn.github.io/til-site/posts/openbsd-the-computer-appliance-maker-s-secret-weapon/).
+[people who don't work on Internet-connected boxes](https://til.andrew-quinn.me/posts/openbsd-the-computer-appliance-maker-s-secret-weapon/).
 Knowing that Python/Perl is already on there means that, 
 provided your script only
 relies on the standard library, you should be able to just `scp` it over in a

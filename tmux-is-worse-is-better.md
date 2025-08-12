@@ -79,7 +79,7 @@ the idea that whatever your software's killer app is,
 you want to get that *really* right for the most common
 use cases, even if it means living with a suboptimal
 approach. 
-[I love VMs for a lot of reasons](https://hiandrewquinn.github.io/til-site/posts/the-unreasonable-effectiveness-of-vms-in-hacker-pedagogy/),
+[I love VMs for a lot of reasons](https://til.andrew-quinn.me/posts/the-unreasonable-effectiveness-of-vms-in-hacker-pedagogy/),
 and I even maintain
 [a set of 3 shell scripts](https://github.com/hiAndrewQuinn/shell-bling-ubuntu)
 which turns a vanilla Ubuntu VM into my personal software 

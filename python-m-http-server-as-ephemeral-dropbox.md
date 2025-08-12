@@ -14,7 +14,7 @@ may not be comfortable with or should have access to
 `scp` or `sftp`? 
 
 Turns out, if you have Python installed -- and
-[you probably do](https://hiandrewquinn.github.io/til-site/posts/what-programming-languages-come-out-of-the-box-on-debian-12/) -- 
+[you probably do](https://til.andrew-quinn.me/posts/what-programming-languages-come-out-of-the-box-on-debian-12/) -- 
 it comes with a handy one-liner file server for just
 such an occasion:
 

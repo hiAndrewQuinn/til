@@ -44,7 +44,7 @@ I'm a big fan of
 I far prefer to spend what limited time I do
 allocate studying computer science to more timeless things
 like
-[how loop invariants work](https://hiandrewquinn.github.io/til-site/posts/binary-search-isn-t-about-search/).
+[how loop invariants work](https://til.andrew-quinn.me/posts/binary-search-isn-t-about-search/).
 
 Vibe coding is sort of the ultimate destination point
 of LLMs and software in general being *heavily complementary*

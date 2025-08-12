@@ -7,9 +7,9 @@ tags:
 ---
 
 If you followed
-["Binary search isn't about search"](https://hiandrewquinn.github.io/til-site/posts/binary-search-isn-t-about-search/)
+["Binary search isn't about search"](https://til.andrew-quinn.me/posts/binary-search-isn-t-about-search/)
 and
-["Binary search isn't about search II"](https://hiandrewquinn.github.io/til-site/posts/binary-search-isn-t-about-search-ii-loop-invariant-of-leftmost-element-search/)
+["Binary search isn't about search II"](https://til.andrew-quinn.me/posts/binary-search-isn-t-about-search-ii-loop-invariant-of-leftmost-element-search/)
 properly, the following statements should suffice as a summary:
 
 ```python

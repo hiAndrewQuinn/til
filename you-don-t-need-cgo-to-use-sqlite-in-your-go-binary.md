@@ -167,7 +167,7 @@ obscure bugs from this transpilation, they did a really good job.
 The only time I can think of this as being really that big of an
 issue is when you're on a non-Internet connected edge device
 (which, hey, happens to be a lot of 
-[what I work on in my day job](https://hiandrewquinn.github.io/til-site/posts/openbsd-the-computer-appliance-maker-s-secret-weapon/))
+[what I work on in my day job](https://til.andrew-quinn.me/posts/openbsd-the-computer-appliance-maker-s-secret-weapon/))
 and truly, genuinely *need* to guarantee that SQLite database is as
 rock solid as it gets. In which case I think you're best off eating
 the CGO complexity and getting the best supported option in the bunch.

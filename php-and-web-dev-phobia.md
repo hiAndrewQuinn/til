@@ -20,7 +20,7 @@ aware of.
 
 So here I'd like to make them aware of it!
 That's right, this is a
-[Slowstart](https://hiandrewquinn.github.io/til-site/posts/quickstarts-and-slowstarts/)
+[Slowstart](https://til.andrew-quinn.me/posts/quickstarts-and-slowstarts/)
 for people who have never touched PHP or web dev before.
 
 Start

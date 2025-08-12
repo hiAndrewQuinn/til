@@ -88,7 +88,7 @@ more reviews of the truly advanced stuff, which reviews the basic stuff
 as a simple matter of course. 
 
 Few people even realize that
-[you can create multi-stage questions in Anki with basic HTML features](https://hiandrewquinn.github.io/til-site/posts/create-multi-stage-anki-card-answers-with-html-s-details-tag/), yet
+[you can create multi-stage questions in Anki with basic HTML features](https://til.andrew-quinn.me/posts/create-multi-stage-anki-card-answers-with-html-s-details-tag/), yet
 this format is incredibly common in traditional pedagogy 
 for a reason - you need to know the answer to 
 subquestion (a) if you want to be able 

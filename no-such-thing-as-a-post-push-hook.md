@@ -9,7 +9,7 @@ tags:
 ---
 
 Tonight I was hacking away at some more little automations to make this TIL nice and
-presentable over at [https://hiandrewquinn.github.io/til-site/](https://hiandrewquinn.github.io/til-site/).
+presentable over at [https://til.andrew-quinn.me/](https://til.andrew-quinn.me/).
 
 Git has a wonderful system called "hooks" which live under `.git/hooks/`, come loaded
 with examples so you can remember how they all work, and -- surprisingly -- don't
