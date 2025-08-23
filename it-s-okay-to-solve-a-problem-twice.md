@@ -1,6 +1,6 @@
 ---
 title: It's okay to solve a problem twice
-date: 2025-08-23
+date: 2025-08-22
 tags:
   - heuristics
   - automation
