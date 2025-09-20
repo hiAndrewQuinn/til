@@ -41,11 +41,19 @@ that the Google monorepo stores multiple _billions_ of lines of code
 in its system. I am aware of no open source project, traditionally
 defined, that measures
 its code base in the billions.
+So that's at least one data point in favor that, yes, businesses tend
+to use "more" lines of code... Kinda... Not really.
 
-But we can also just use the plain old evidence of our senses. We've all
+Let's instead just use the plain old evidence of our senses.
+If nothing else, at least the ways we will be blind to the elephant will
+be reflective of the parts we're closest to. Those are the important
+parts to understand for our day-to-day.
+
+We've all
 worked at companies before, right? Does anyone out there _really_ want
 to claim that the code they write is as simple and flexible as what the
-open source gurus sling? Probably not. Why? Because edge cases accrete,
+open source gurus sling? Probably not, I definitely wouldn't.
+Why not? Because edge cases accrete,
 over time, in response to changing business requirements and business
 forecasts, and not uncommonly simply because someone new joined the team
 who didn't quite understand how we did things here and shoehorned
