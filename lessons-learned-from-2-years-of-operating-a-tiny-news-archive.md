@@ -1,17 +1,15 @@
 ---
-title: Lessons learned from 6 months of operating a teensy-tiny news archive
-subtitle: "Technically closer to 8 months, but who's counting?"
+title: Lessons learned from 2 years of operating a teensy-tiny news archive
 date: 2025-10-27
 tags: 
-- law-of-diminishing-returns
 - hugo
-- git-as-a-database
-- github-actions
 - documentation
 - selkouutiset-archive
 - secondary-language-acquisition
-- cost-optimization
 - cloud-costs
+- picore
+- tiny-core-linux
+- perl
 ---
 
 I began running
