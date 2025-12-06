@@ -21,7 +21,7 @@ tags:
 File Explorer drag & drop     ########## (112 MBps)
 Copy-Item                     #######    (82 MBps)
 Built in SFTP client          ######     (70 MBps)
-Built in robocopy             ##         (25 MBps)
+Built in robocopy (/MT:32)    ##         (25 MBps)
 WSL 2 rsync                   #          (13 MBps)
 ```
 
@@ -32,7 +32,7 @@ In table form:
 | Drag and drop | ~112 | --- |
 | `Copy-Item` | ~82 | -27\% |
 | `sftp` | ~70 | -37\% |
-| `robocopy` | ~25 MBps | -78\% |
+| `robocopy` (with `/MT:32`) | ~25 MBps | -78\% |
 | `rsync` (WSL 2) | ~13 MBps | -88\% |
 
 I feel like I'm losing my mind. 
@@ -77,6 +77,16 @@ supposedly knows; software that was created to be demanding
 on system resources 30 years ago is blazing fast to the 
 point of instantaneous today, that's why everyone loves
 Vim and Emacs over VS Code, etc.
+
+(Edit, because I know people are going to ask: When I say
+"defaults" for `robocopy` I forgot to mention `/MT:32`, the
+option that is *supposed* to turn on multithreading with
+this tool. I had that on, and my understanding is that's
+the lion's share of optimization that has to be done with
+this tool to get supposedly "good" performance, and I just...
+didn't. My specific flags were `/MT:32 /Z /R:1 /W:1`, but
+again, this was over an extremely stable LAN connection,
+so those last two should barely matter... anyway.)
 
 Not so, apparently! `robocopy` doesn't print its progress
 in seconds out of the box, but it *can* restart things from
