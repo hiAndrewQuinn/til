@@ -5,6 +5,9 @@ tags:
 - claude
 - cra
 - cybersecurity
+- llm
+- econ-flavored
+- devops
 ---
 
 
@@ -34,8 +37,8 @@ go online and become legally enforceable across the EU,
 with potential fines up to 15 million euros or 2.5% of global
 annual turnover for noncompliance.
 
-This poses some ... *interesting* new challenges. The first
-order effect of a model like Mythos is that the mean number
+This poses some ... *interesting* new challenges. The first-order
+effect of a model like Mythos is that the mean number
 of actively exploited vulnerabilities and incident reports
 one might have predicted to be filed per day or per week 
 last year has just shot way up. 
@@ -53,7 +56,7 @@ might hockey stick if they prove they're up to the task.
 Many EU software companies will likely *fail* to keep up with
 all of this and shutter their doors. The ones that remain
 will probably raise their prices significantly in order to
-keep feeding whatever Mythos class cryptid tamers they employ
+keep feeding whatever Mythos-class cryptid tamers they employ
 to keep them in business. The end consumer ends up paying more
 money and being safer - potentially a lot safer. 
 Customers in the US and Asia might start buying European
@@ -74,10 +77,10 @@ enough to price this kind of thing in in a pre-AI world.
 
 Ultimately perhaps the best way to model how these two events
 intersect is simply to say that Mythos will make the CRA just
-like itself, only moreso. If you predict the CRA will lead to
+like itself, only more so. If you predict the CRA will lead to
 the demise of non-subscription software and hardware in the
 EU as we know it[^1], Mythos should make it look more like a
-Cambrian extinction event. If you think EU engineering cultures 
+Permian extinction event. If you think EU engineering cultures 
 are going to embrace further dependency minimalism, Mythos 
 should make them go all the way and just one-shot everything 
 with the Go stdlib whenever possible so their SBOM can fit 
@@ -89,5 +92,5 @@ collide in some crazy ways.
 
 
 
-[^1]: This may sound contradictory, but it flows from the requirements. If you want to sell 1 million EU dishwashers, and you don't want to go full-analog because e.g. there is no possible way to meet your energy efficiency requirements that way, you will also need a way to *patch* those 1 million dishwashers, as well as a way to *fund* that patch. Doubling or tripling your up front dishwasher price is a terrible idea for all kinds of consumer psychology reasons, and also because you'll be undercut by firms too stupid to realize they will go out of business by pretending everything is business as usual. But a 25 euro a month subscription to WashPlus lets you deliver over-the-air automatic updates - tens a day, perhaps, if Mythos lives up to the hype - in a way which allows the SaaS product line to register themselves as nearly pure profit, and the cybersec security line's nearly pure loss to be offset gracefully. There may be other approaches we'll see; maybe offline dishwasher manufacturers will try a hybrid approach where they give the customers a flashed USB stick to plug-and-play. But then what happens when one enterprising malcontent plugs their laptop into the dishwasher and directs GLMythos-5.2-Abliterated-Heretic-UnknownPleasuresRemix to "vivisect"? What if the SeL4 based RTOS you spent millions developing ahead of time turns out not to be so well protected after all? Seems awfully complicated in some ways compared to just making more money every month, with the option to dynamically increase or decrease the subscription price in response to market forces at the drop of a hat. I would predict the long-run equilbrium to eventually settle back down to "the absolute smallest, most well-defended microkernel you've ever seen" but the path there might be very rocky due to that not really being a core competency of ... well, any country on Earth, I guess. 
+[^1]: This may sound contradictory, but it flows from the requirements. If you want to sell 1 million EU dishwashers, and you don't want to go full-analog because e.g. there is no possible way to meet your energy efficiency requirements that way, you will also need a way to *patch* those 1 million dishwashers, as well as a way to *fund* that patch. Doubling or tripling your up-front dishwasher price is a terrible idea for all kinds of consumer psychology reasons, and also because you'll be undercut by firms too stupid to realize they will go out of business by pretending everything is business as usual. But a 25-euro-a-month subscription to WashPlus lets you deliver over-the-air automatic updates - tens a day, perhaps, if Mythos lives up to the hype - in a way which allows the SaaS product line to register itself as nearly pure profit, and the cybersecurity line's nearly pure loss to be offset gracefully. There may be other approaches we'll see; maybe offline dishwasher manufacturers will try a hybrid approach where they give the customers a flashed USB stick to plug-and-play. But then what happens when one enterprising malcontent plugs their laptop into the dishwasher and directs GLMythos-5.2-Abliterated-Heretic-UnknownPleasuresRemix to "vivisect"? What if the SeL4-based RTOS you spent millions developing ahead of time turns out not to be so well protected after all? Seems awfully complicated in some ways compared to just making more money every month, with the option to dynamically increase or decrease the subscription price in response to market forces at the drop of a hat. I would predict the long-run equilibrium to eventually settle back down to "the absolute smallest, most well-defended microkernel you've ever seen" but the path there might be very rocky due to that not really being a core competency of ... well, any country on Earth, I guess. 
 
