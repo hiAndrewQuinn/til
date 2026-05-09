@@ -100,7 +100,7 @@ variations, it's time to factor it out into a
 so that instead you can just use
 
 ```groovy
-@Library('pipelines@v0.0.1')  # pull Git commit tagged 'v0.0.1'
+@Library('pipelines@v0.0.1')  // pull Git commit tagged 'v0.0.1'
 
 standardNpmPipeline()
 ```
