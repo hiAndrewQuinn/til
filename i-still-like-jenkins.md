@@ -159,7 +159,7 @@ organizationFolder('my-company-github-org') {
 
 And then from there, if even the mere act of providing a Jenkinsfile
 bums you out, you can again use the Job DSL plugin (this time in concert with the
-[Remote Jenkinsfile Provider plugin](https://plugins.jenkins.io/remote-jenkinsfile-provider/))
+[Remote Jenkinsfile Provider plugin](https://plugins.jenkins.io/remote-file/))
 to define a default Jenkinsfile every repo without an existing Jenkinsfile overriding
 it gets:
 
