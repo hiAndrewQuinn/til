@@ -3,11 +3,17 @@ title: I still like Jenkins
 date: 2026-05-09
 tags: 
 - against-entropy
+- builds
+- cicd
+- configuration-as-code
+- devops
+- automation
+- jenkins
 ---
 
 
-Before Github Actions,
-before Gitlab CI/CD,
+Before [GitHub Actions](https://github.com/features/actions),
+before [GitLab CI/CD](https://docs.gitlab.com/ee/ci/),
 and before the panoply of startups all promising
 to help you build your software faster and with
 less hassle, there was the humble,
@@ -22,7 +28,7 @@ who was using it was exactly happy with it.
 But *I* like Jenkins a great deal. Probably due to it
 being open source, and having an embedded sandboxed
 implementation of
-[something kind of 2:1-ways between Java and Python](https://groovy-lang.org/),
+[something kind of 2:1-ways between Java and Python](https://groovy-lang.org/),[^groovy]
 I am aware of no CI/CD system out there that truly
 gets you as much flexibility as Jenkins does.
 
@@ -30,9 +36,9 @@ But - and I think this is key - Jenkins is *complex*,
 at least as complex as the actual build jobs you are
 trying to orchestrate. You are very well served by just
 racking up hours in the cockpit with any CI/CD system,
-as they call come with warts. Unlike most commerical
+as they all come with warts. Unlike most commercial
 offerings, the only thing Jenkins will force you to pay
-for is the electricty or perhaps rental costs of the 
+for is the electricity or perhaps rental costs of the 
 VMs you run it on. At least for me, this rock bottom
 price means I'm a lot more willing to get weird and
 experimental with it.
@@ -42,7 +48,8 @@ before get started?
 The official
 [Docker container](https://hub.docker.com/r/jenkins/jenkins/)
 is surprisingly easy to get set up.
-The only thing I emphasize is to use Multibranch Pipelines
+The only thing I emphasize is to use
+[Multibranch Pipelines](https://www.jenkins.io/doc/book/pipeline/multibranch/)
 from the start. Accept no imitations!
 Multibranch Pipelines mean that
 *every* Git branch, every Pull Request, etc., gets a separate
@@ -52,9 +59,10 @@ as the PRs complete or the branches disappear from remote.
 From there it's mostly a game of figuring out what you
 actually want your various repositories to do. Start by
 taking a handful of jobs and creating
-`Jenkinsfile` files in them. This is what the Multibranch
+[`Jenkinsfile`](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/) files in them. This is what the Multibranch
 Pipeline needs to be present on a branch to know it actually
-is supposed to build that branch. The Declarative Pipeline
+is supposed to build that branch. The
+[Declarative Pipeline](https://www.jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline)
 syntax is pretty straightforward to read, and looks like
 so:
 
@@ -87,8 +95,9 @@ pipeline {
 
 Once you get to the point where you're starting to copy and
 paste the same Jenkinsfile, or the same file with only minor
-variations, it's time to factor it out into a Jenkins
-Shared Pipeline, so that instead you can just use
+variations, it's time to factor it out into a
+[Jenkins Shared Library](https://www.jenkins.io/doc/book/pipeline/shared-libraries/),
+so that instead you can just use
 
 ```groovy
 @Library('pipelines@v0.0.1')  # pull Git commit tagged 'v0.0.1'
@@ -97,15 +106,15 @@ standardNpmPipeline()
 ```
 
 Jenkins' sophistication kind of has, like, stages of
-enlightenment to it, and by the time you are moving your
+enlightenment to it,[^enlightenment] and by the time you are moving your
 own pipelines into a centralized versioned repo you're
 starting to get up there in rank. But you can go so much
 farther. For example, if you don't want to bother actually
 manually creating those Multibranch Pipeline jobs, you
 can use the 
 [Job DSL plugin](https://plugins.jenkins.io/job-dsl/)
-to, for example, scrape *every* repo you have on W.L.O.G.
-Github, like so:
+to, for example, scrape *every* repo you have on W.L.O.G.[^wlog]
+GitHub, like so:
 
 ```groovy
 organizationFolder('my-company-github-org') {
@@ -149,8 +158,9 @@ organizationFolder('my-company-github-org') {
 ```
 
 And then from there, if even the mere act of providing a Jenkinsfile
-bums you out, you can again use the Job DSL plugin to define a
-default Jenkinsfile every repo without an existing Jenkinsfile overriding
+bums you out, you can again use the Job DSL plugin (this time in concert with the
+[Remote Jenkinsfile Provider plugin](https://plugins.jenkins.io/remote-jenkinsfile-provider/))
+to define a default Jenkinsfile every repo without an existing Jenkinsfile overriding
 it gets:
 
 ```groovy
@@ -174,4 +184,13 @@ projectFactories {
     }
 ```
 
-As always, assume I have gotten one thing subtly and intentionally wrong with these code snippets for pedagogical purposes. Totally not that I was too lazy on a Saturday to pull down a Jenkins Docker image at home and stress test them myself. Regardless I do hope that I have given you some idea of the level of *control* Jenkins offers, the thrill of automating the automations that can at its best only be matched by a game like *Factorio*. I have always liked software that rewards the player for their time investment, and Jenkins is up there with the best of them in that department.
+As always, assume I have gotten one thing subtly and intentionally wrong with these code snippets for pedagogical purposes. Totally not that I was too lazy on a Saturday to pull down a Jenkins Docker image at home and stress test them myself. Regardless I do hope that I have given you some idea of the level of *control* Jenkins offers, the thrill of automating the automations that can at its best only be matched by a game like *[Factorio](https://www.factorio.com/)*.[^factorio] I have always liked software that rewards the player for their time investment, and Jenkins is up there with the best of them in that department.
+
+--
+[^groovy]: I mean this affectionately. Groovy will let you write code that *looks* like Java but with the breezy dynamic typing and closure-fu of Python; it will also let you write code that does neither side any favors. Inside a Jenkins pipeline you also have to contend with the [CPS transformation](https://www.jenkins.io/doc/book/pipeline/cps-method-mismatches/), which serializes your script's continuation so a build can survive a controller restart - elegant in concept, occasionally cursed in practice.
+
+[^enlightenment]: Roughly: (1) clicking buttons in the web UI; (2) writing a Jenkinsfile; (3) factoring shared steps into a Shared Library; (4) generating jobs themselves with Job DSL; (5) achieving Jenkinsfile-less nirvana via Remote Jenkinsfile Provider. There is presumably a sixth stage where you give up and just write your own Kubernetes operator, but I have not personally reached it.
+
+[^wlog]: Without loss of generality.
+
+[^factorio]: The factory must grow. So must the Jenkins controller's heap.
