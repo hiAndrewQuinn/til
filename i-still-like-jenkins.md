@@ -160,28 +160,36 @@ organizationFolder('my-company-github-org') {
 And then from there, if even the mere act of providing a Jenkinsfile
 bums you out, you can again use the Job DSL plugin (this time in concert with the
 [Remote Jenkinsfile Provider plugin](https://plugins.jenkins.io/remote-file/))
-to define a default Jenkinsfile every repo without an existing Jenkinsfile overriding
-it gets:
+to define a default Jenkinsfile that every repo without its own Jenkinsfile
+falls back to:
 
 ```groovy
-// This usually requires the Remote Jenkinsfile Provider plugin too.
+// Requires the Remote Jenkinsfile Provider plugin.
+// Factories are evaluated in order; the first one whose marker matches wins.
 projectFactories {
-        remoteJenkinsfileProjectFactory {
-            localMarker('package.json') 
-            
-            remoteJenkinsfile('pipelines/default-npm-pipeline.groovy') 
-            
-            remoteJenkinsfileSCM {
-                git {
-                    remote { 
-                        url('https://github.com/my-awesome-startup/jenkins-infrastructure.git') 
-                    }
-                    credentials('github-service-account-token')
-                    branches('main')
+    // First: if the branch has its own Jenkinsfile, use it.
+    workflowMultiBranchProjectFactory {
+        scriptPath('Jenkinsfile')
+    }
+
+    // Otherwise: fall back to a centralized default for any repo
+    // that looks like a Node project (i.e. has a package.json).
+    remoteJenkinsfileProjectFactory {
+        localMarker('package.json')
+
+        remoteJenkinsfile('pipelines/default-npm-pipeline.groovy')
+
+        remoteJenkinsfileSCM {
+            git {
+                remote {
+                    url('https://github.com/my-awesome-startup/jenkins-infrastructure.git')
                 }
+                credentials('github-service-account-token')
+                branches('main')
             }
         }
     }
+}
 ```
 
 As always, assume I have gotten one thing subtly and intentionally wrong with these code snippets for pedagogical purposes. Totally not that I was too lazy on a Saturday to pull down a Jenkins Docker image at home and stress test them myself. Regardless I do hope that I have given you some idea of the level of *control* Jenkins offers, the thrill of automating the automations that can at its best only be matched by a game like *[Factorio](https://www.factorio.com/)*.[^factorio] I have always liked software that rewards the player for their time investment, and Jenkins is up there with the best of them in that department.
