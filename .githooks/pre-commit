@@ -1,0 +1,36 @@
+#!/bin/bash
+# Reject commits that link directly to .md files from inside Markdown.
+# Hugo serves posts under /posts/<slug>/, so internal links should use
+# that form rather than pointing at raw .md files.
+#
+# Activate locally with:
+#   git config core.hooksPath .githooks
+
+set -e
+
+bad=0
+tmp=$(mktemp)
+trap 'rm -f "$tmp"' EXIT
+
+while IFS= read -r file; do
+    [ -z "$file" ] && continue
+    [ ! -f "$file" ] && continue
+    # Match ](target.md) where target is not an http(s):// or mailto: URL.
+    # Allow optional #anchor after .md.
+    if grep -nP '\]\((?!https?://|mailto:|ftp://)[^)]*\.md(#[^)]*)?\)' "$file" > "$tmp"; then
+        if [ "$bad" -eq 0 ]; then
+            echo "pre-commit: rejecting links to .md files (use /posts/<slug>/ instead)"
+            echo
+        fi
+        echo "  $file:"
+        sed 's/^/    /' "$tmp"
+        bad=1
+    fi
+done < <(git diff --cached --name-only --diff-filter=ACM | grep -E '\.md$' || true)
+
+if [ "$bad" -ne 0 ]; then
+    echo
+    echo "Replace [text](slug.md) with [text](/posts/slug/) and try again."
+    exit 1
+fi
+exit 0
