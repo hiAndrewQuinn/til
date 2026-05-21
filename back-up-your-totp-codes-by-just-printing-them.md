@@ -11,7 +11,7 @@ tags:
 - worse-is-better
 ---
 
-![PNG of the TOTP code for JBSWY3DPEHPK3PXP.](./totp-example-01.png)
+![PNG of the TOTP code for JBSWY3DPEHPK3PXP.](/totp-example-01.png)
 
 Scan the Quick Response (QR) code above with your favorite Two-Factor Authentication (2FA) app.
 You should get a six digit number, rotating every
