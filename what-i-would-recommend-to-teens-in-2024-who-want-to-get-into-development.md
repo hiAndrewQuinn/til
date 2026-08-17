@@ -1,6 +1,7 @@
 ---
 title: What I would recommend to teens in 2024 who want to get into development
 date: 2024-09-08
+draft: true
 tags: 
 - daily-life
 - linux
